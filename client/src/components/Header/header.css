@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 100%;
 	line-height: 60px;
+	position: relative;
 }
 
 .nav_wrapper{
@@ -28,7 +29,32 @@
 	margin-bottom: 0;
 }
 
-.nav_item{
+.nav__item{
   list-style-type: none;
 align-items: center;
+cursor: pointer;
+}
+.nav__item a {
+	text-decoration: none;
+color: white !important;
+}
+.hamburger{
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+.navigation{
+	display: none;
+	
+}
+
+.hamburger{
+	display: inline;
+	justify-content: space-between;
+	font-size: 1.1rem;
+}
+
+
+
 }
