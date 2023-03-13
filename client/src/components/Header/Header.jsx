@@ -46,9 +46,6 @@ const Header = () => {
 	const headerRef = useRef(null);
 	const menuRef = useRef(null);
 
-
-  
-
 	// Funkcja dodająca klasę "sticky__header" do nagłówka po przewinięciu strony o 80 pikseli
 
 	const stickyHeaderFunction = () => {
@@ -69,28 +66,11 @@ const Header = () => {
 							<img src={logo} alt="logo" />
 						</div>
 
-						{/* <MDBSideNav right isOpen={rightOpen} absolute getOpenState={(e) => setRightOpen(e)}>
-        <MDBSideNavMenu>
-          <MDBSideNavItem>
-            <MDBSideNavLink>
-              <MDBIcon far icon='smile' className='fa-fw me-3' />
-              <span className='sidenav-non-slim'>Link 1</span>
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-        </MDBSideNavMenu>
-      </MDBSideNav> */}
-
-						{/* <div style={{ padding: '20px' }} className='text-center'>
-        <MDBBtn onClick={() => setRightOpen(!rightOpen)}>
-          <MDBIcon fas icon='bars' />
-        </MDBBtn>
-      </div> */}
-
-			<div className="hamburger">
-				<span>
-				<i class="ri-menu-line"></i>
-				</span>
-			</div>
+						<div className="hamburger">
+							<span>
+							<i class="ri-menu-line"></i>
+							</span>
+						</div>
 
 						<div className="navigation" ref={menuRef}>
 							<ul className="menu">
